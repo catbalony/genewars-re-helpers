@@ -37,6 +37,7 @@
  0001:00028FFC       jpt_298CA
  0001:0002A623       def_298CA
  0001:0002B100       jpt_2B1F7
+ 0001:0002B120       W?UpdateCreatures$:Computer$n()v
  0001:0002B29F       def_2B1F7
  0001:0002CF40       jpt_2D696
  0001:0002D63E       def_2D696
