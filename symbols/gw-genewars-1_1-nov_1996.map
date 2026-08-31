@@ -737,6 +737,7 @@
  0001:000D3D5F       jpt_D3D57
  0001:000D3F68       funcs_D3F60
  0001:000D411D       funcs_D4115
+ 0001:000D582C       LbSpriteDraw_
  0001:000D59B2       __hook387
  0001:000D5A86       __unhook387
  0001:000D5ADF       nullsub_8
