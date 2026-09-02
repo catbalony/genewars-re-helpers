@@ -22,4 +22,5 @@ Remember: your output is research input, never proof authority.
 
 ## Published batches
 
-- `bw-c59498e516c3`
+- `bw-1768bb2ef3d9`
+- `bw-8f09c30d7618`

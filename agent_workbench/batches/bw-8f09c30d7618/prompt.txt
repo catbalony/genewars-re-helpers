@@ -1,0 +1,113 @@
+WORKER BRIEFING (mandatory; applies to everything below):
+- At the top of your return, identify yourself: model, provider/platform, and mode (e.g. "agent" or "chat"). If you are uncertain about what you are running as, say "unknown" rather than guessing - some platforms route or obscure models, and your self-report is recorded but not treated as authoritative.
+- This is RESEARCH, NOT proof authority. Your output never changes this project's canonical truth by itself; only the project's own deterministic verification can establish anything as PROVEN.
+- Label every claim as exactly one of:
+    OBSERVATION - you directly saw or measured it
+    INFERENCE   - you concluded it from observations (say from which)
+    HYPOTHESIS  - speculation, not yet grounded
+- Never state or imply a canonical PROVEN status for any claim.
+- If your time, context, or resources are running out, STOP and return a useful PARTIAL result immediately. A partial answer that arrives is worth more than a complete answer that never does.
+
+S11 single-symbol placement research (public data only).
+
+Scope: 4 unresolved candidate symbol(s) from the project's deterministic
+S11 pipeline (ambiguity queue). For EACH candidate section below:
+
+- report observations separately from inference/hypothesis
+- evaluate the listed candidate addresses against the public corpus bytes
+  and the cross-build matches
+- identify any plausible placement, or explain why the candidate set is
+  incomplete or contradictory
+- record contradictions or ambiguity explicitly
+- recommend the next DETERMINISTIC test that would confirm or reject a
+  placement (a test the project can run mechanically; do not claim a
+  result yourself)
+
+Do not claim PROVEN status for any placement. Your output is research
+input only; the project's own deterministic verification decides anything
+canonical.
+
+Candidates in this batch: LbWindowsControl_, PlaySampleFromAddress_, SetSamplePan_, SetSampleVolume_
+
+
+=== CANDIDATE: LbWindowsControl_ (module 123 - WD7R.lib) ===
+
+Disposition: AMBIGUOUS - stage-1 arbitration refused to pick (multiple surviving addresses)
+
+Candidate addresses (v1.1 corpus flat addresses):
+- 0xe06fc: size 15, callers 1, callees 0, extent 15, fixups 0, cross_build_match 000e0a58 (exact_byte_match)
+    module upper bound (bytes to module end): 16
+- 0xe070b: size 13, callers 1, callees 0, extent 13, fixups 0, cross_build_match 000e0a67 (exact_byte_match)
+    module upper bound (bytes to module end): 16
+G1 model predictions (diagnostic hints, never evidence):
+- above_anchor_extrapolation -> 0xe04cc (anchor LbSpriteSetupAll_)
+- below_anchor_extrapolation -> 0xb5790 (anchor LbArcTan_)
+Nearest PROVEN anchors (from the project ledgers):
+- LbArcTan_: mainmap 0xab3b8, corpus entry 0xaa598 (resolved_placement_ledger_r2 PROVEN)
+- LbSpriteSetupAll_: mainmap 0xb6c80, corpus entry 0xe0b9c (resolved_placement_ledger_r2 PROVEN)
+
+=== CANDIDATE: PlaySampleFromAddress_ (module 120 - dsnd7r.lib) ===
+
+Disposition: GLOBAL_UNSAT_CANDIDATE_SET - no injective assignment exists for this component; widen candidate generation (candidate search incomplete, not a model problem)
+
+Candidate addresses (v1.1 corpus flat addresses):
+- 0xae63c: size 27, callers 4, callees 0, extent 27, fixups 1, cross_build_match 000a532c (one_relocation_tolerant_match)
+    module upper bound (bytes to module end): 608
+- 0xae658: size 13, callers 4, callees 0, extent 13, fixups 1, cross_build_match 000a5348 (fixup_aware_multi_relocation_match)
+    module upper bound (bytes to module end): 608
+Component constraint: symbols PlaySampleFromAddress_, SetSamplePan_, SetSampleVolume_ share candidate addresses 714300, 714328; a placement must keep the whole component injective (status: GLOBAL_UNSAT_CANDIDATE_SET).
+G1 model predictions (diagnostic hints, never evidence):
+- above_anchor_extrapolation -> 0xae6b0 (anchor InitAudio_)
+- below_anchor_extrapolation -> 0x54680 (anchor SwitchOffSound_)
+Nearest PROVEN anchors (from the project ledgers):
+- SwitchOffSound_: mainmap 0x98d60, corpus entry 0x371b0 (resolved_placement_ledger_r2 PROVEN)
+- InitAudio_: mainmap 0xb6d80, corpus entry 0xaf200 (map_align_ledger PROVEN unique)
+
+=== CANDIDATE: SetSamplePan_ (module 122 - dsnd7r.lib) ===
+
+Disposition: GLOBAL_UNSAT_CANDIDATE_SET - no injective assignment exists for this component; widen candidate generation (candidate search incomplete, not a model problem)
+
+Candidate addresses (v1.1 corpus flat addresses):
+- 0xae63c: size 27, callers 4, callees 0, extent 27, fixups 1, cross_build_match 000a532c (one_relocation_tolerant_match)
+    module upper bound (bytes to module end): 144
+- 0xae658: size 13, callers 4, callees 0, extent 13, fixups 1, cross_build_match 000a5348 (fixup_aware_multi_relocation_match)
+    module upper bound (bytes to module end): 144
+Component constraint: symbols PlaySampleFromAddress_, SetSamplePan_, SetSampleVolume_ share candidate addresses 714300, 714328; a placement must keep the whole component injective (status: GLOBAL_UNSAT_CANDIDATE_SET).
+G1 model predictions (diagnostic hints, never evidence):
+- above_anchor_extrapolation -> 0xae9a0 (anchor InitAudio_)
+- below_anchor_extrapolation -> 0x54970 (anchor SwitchOffSound_)
+Nearest PROVEN anchors (from the project ledgers):
+- SwitchOffSound_: mainmap 0x98d60, corpus entry 0x371b0 (resolved_placement_ledger_r2 PROVEN)
+- InitAudio_: mainmap 0xb6d80, corpus entry 0xaf200 (map_align_ledger PROVEN unique)
+
+=== CANDIDATE: SetSampleVolume_ (module 121 - dsnd7r.lib) ===
+
+Disposition: GLOBAL_UNSAT_CANDIDATE_SET - no injective assignment exists for this component; widen candidate generation (candidate search incomplete, not a model problem)
+
+Candidate addresses (v1.1 corpus flat addresses):
+- 0xae63c: size 27, callers 4, callees 0, extent 27, fixups 1, cross_build_match 000a532c (one_relocation_tolerant_match)
+    module upper bound (bytes to module end): 144
+- 0xae658: size 13, callers 4, callees 0, extent 13, fixups 1, cross_build_match 000a5348 (fixup_aware_multi_relocation_match)
+    module upper bound (bytes to module end): 144
+Component constraint: symbols PlaySampleFromAddress_, SetSamplePan_, SetSampleVolume_ share candidate addresses 714300, 714328; a placement must keep the whole component injective (status: GLOBAL_UNSAT_CANDIDATE_SET).
+G1 model predictions (diagnostic hints, never evidence):
+- above_anchor_extrapolation -> 0xae910 (anchor InitAudio_)
+- below_anchor_extrapolation -> 0x548e0 (anchor SwitchOffSound_)
+Nearest PROVEN anchors (from the project ledgers):
+- SwitchOffSound_: mainmap 0x98d60, corpus entry 0x371b0 (resolved_placement_ledger_r2 PROVEN)
+- InitAudio_: mainmap 0xb6d80, corpus entry 0xaf200 (map_align_ledger PROVEN unique)
+
+=== EVIDENCE LOCATIONS (all inside THIS public repository) ===
+
+- symbols/gw-genewars-1_1-nov_1996.xml : function extents; ADDRESS_RANGE END
+  is INCLUSIVE of the last instruction byte (do not subtract 1)
+- symbols/gw-genewars-1_1-nov_1996.map : WATCOM map; segment-relative
+  0001: addresses and symbol order
+- symbols/gw-genewars-1_1-nov_1996.bytes : flat bytes; file offset =
+  map value - 0x10000 (v1.1 corpus address = file offset + 0x10000)
+- symbols/gw-genewars-beta2-jul_1996.bytes : beta2 control; file offset =
+  map value directly (useful as a cross-build control)
+
+Everything you need is in the repository; if a listed candidate address
+does not match the bytes you observe, report that contradiction as an
+OBSERVATION with the exact offsets you checked.

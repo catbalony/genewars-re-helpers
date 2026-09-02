@@ -1,0 +1,103 @@
+WORKER BRIEFING (mandatory; applies to everything below):
+- At the top of your return, identify yourself: model, provider/platform, and mode (e.g. "agent" or "chat"). If you are uncertain about what you are running as, say "unknown" rather than guessing - some platforms route or obscure models, and your self-report is recorded but not treated as authoritative.
+- This is RESEARCH, NOT proof authority. Your output never changes this project's canonical truth by itself; only the project's own deterministic verification can establish anything as PROVEN.
+- Label every claim as exactly one of:
+    OBSERVATION - you directly saw or measured it
+    INFERENCE   - you concluded it from observations (say from which)
+    HYPOTHESIS  - speculation, not yet grounded
+- Never state or imply a canonical PROVEN status for any claim.
+- If your time, context, or resources are running out, STOP and return a useful PARTIAL result immediately. A partial answer that arrives is worth more than a complete answer that never does.
+
+S11 single-symbol placement research (public data only).
+
+Scope: 4 unresolved candidate symbol(s) from the project's deterministic
+S11 pipeline (ambiguity queue). For EACH candidate section below:
+
+- report observations separately from inference/hypothesis
+- evaluate the listed candidate addresses against the public corpus bytes
+  and the cross-build matches
+- identify any plausible placement, or explain why the candidate set is
+  incomplete or contradictory
+- record contradictions or ambiguity explicitly
+- recommend the next DETERMINISTIC test that would confirm or reject a
+  placement (a test the project can run mechanically; do not claim a
+  result yourself)
+
+Do not claim PROVEN status for any placement. Your output is research
+input only; the project's own deterministic verification decides anything
+canonical.
+
+Candidates in this batch: SetSamplePitch_, __assert_, __wcpp_2_call_terminate__, matherr_
+
+
+=== CANDIDATE: SetSamplePitch_ (module 53 - dsnd7r.lib) ===
+
+Disposition: AMBIGUOUS - stage-1 arbitration refused to pick
+
+Candidate addresses (v1.1 corpus flat addresses):
+- 0x97650: size 141, callers 0, callees 0, extent None (extent INVALID), fixups None, cross_build_match none ()
+- 0x974b0: size 133, callers 3, callees 0, extent None (extent INVALID), fixups None, cross_build_match none () OCCUPIED by PROVEN CheckMyGadgetsOnly
+
+=== CANDIDATE: __assert_ (module 195 - clib3r.lib) ===
+
+Disposition: AMBIGUOUS - stage-1 arbitration refused to pick (multiple surviving addresses)
+
+Candidate addresses (v1.1 corpus flat addresses):
+- 0xc359f: size 37, callers 1, callees 0, extent None (extent INVALID), fixups None, cross_build_match none () OCCUPIED by PROVEN __chk8087_
+- 0xc35c4: size 10, callers 8, callees 0, extent 10, fixups 0, cross_build_match 000d6d18 (exact_byte_match)
+    module upper bound (bytes to module end): 122
+- 0xc35ce: size 8, callers 7, callees 0, extent 8, fixups 0, cross_build_match 000d6d22 (exact_byte_match)
+    module upper bound (bytes to module end): 122
+- 0xc37cc: size 51, callers 2, callees 0, extent 51, fixups 0, cross_build_match 000d6f20 (exact_byte_match)
+    module upper bound (bytes to module end): 122
+G1 model predictions (diagnostic hints, never evidence):
+- above_anchor_extrapolation -> 0xa8ce2 (anchor _mbsnccnt_)
+- below_anchor_extrapolation -> 0xc3560 (anchor __init_8087_)
+Nearest PROVEN anchors (from the project ledgers):
+- __init_8087_: mainmap 0xc4bb8, corpus entry 0xc34de (resolved_placement_ledger_r2 PROVEN)
+- _mbsnccnt_: mainmap 0xc9c53, corpus entry 0xadcfb (resolved_placement_ledger_r2 PROVEN)
+
+=== CANDIDATE: __wcpp_2_call_terminate__ (module 350 - plib3r.lib) ===
+
+Disposition: AMBIGUOUS - stage-1 arbitration refused to pick (multiple surviving addresses)
+
+Candidate addresses (v1.1 corpus flat addresses):
+- 0xdfc77: size 5, callers 1, callees 0, extent None (extent INVALID), fixups None, cross_build_match none () OCCUPIED by PROVEN __wcpp_2_stab_trav_comp__
+- 0xe06fc: size 15, callers 1, callees 0, extent 15, fixups 0, cross_build_match 000e0a58 (exact_byte_match)
+    module upper bound (bytes to module end): 17
+- 0xe070b: size 13, callers 1, callees 0, extent 13, fixups 0, cross_build_match 000e0a67 (exact_byte_match)
+    module upper bound (bytes to module end): 17
+G1 model predictions (diagnostic hints, never evidence):
+- above_anchor_extrapolation -> 0xe0488 (anchor __wcpp_2_alloc_exc__)
+- below_anchor_extrapolation -> 0xdfdc4 (anchor __wcpp_2_stab_entry__)
+Nearest PROVEN anchors (from the project ledgers):
+- __wcpp_2_stab_entry__: mainmap 0xe8adc, corpus entry 0xdfc28 (map_align_ledger PROVEN unique)
+- __wcpp_2_alloc_exc__: mainmap 0xe8d84, corpus entry 0xe0594 (map_align_ledger PROVEN unique)
+
+=== CANDIDATE: matherr_ (module 372 - math387r.lib) ===
+
+Disposition: AMBIGUOUS - stage-1 arbitration refused to pick (multiple surviving addresses)
+
+Candidate addresses (v1.1 corpus flat addresses):
+- 0xd582c: size 204, callers 0, callees 0, extent None (extent INVALID), fixups None, cross_build_match none () OCCUPIED by PROVEN LbSpriteDraw_
+- 0xd5ae0: size 39, callers 1, callees 0, extent 39, fixups 0, cross_build_match 000d4400 (exact_byte_match)
+- 0xd5bc0: size 25, callers 1, callees 0, extent 25, fixups 3, cross_build_match 000d700c (fixup_aware_multi_relocation_match)
+G1 model predictions (diagnostic hints, never evidence):
+- below_anchor_extrapolation -> 0xd59b4 (anchor __rterrmsg_)
+Nearest PROVEN anchors (from the project ledgers):
+- __rterrmsg_: mainmap 0xe9a94, corpus entry 0xd5918 (resolved_placement_ledger_r2 PROVEN)
+
+=== EVIDENCE LOCATIONS (all inside THIS public repository) ===
+
+- symbols/gw-genewars-1_1-nov_1996.xml : function extents; ADDRESS_RANGE END
+  is INCLUSIVE of the last instruction byte (do not subtract 1)
+- symbols/gw-genewars-1_1-nov_1996.map : WATCOM map; segment-relative
+  0001: addresses and symbol order
+- symbols/gw-genewars-1_1-nov_1996.bytes : flat bytes; file offset =
+  map value - 0x10000 (v1.1 corpus address = file offset + 0x10000)
+- symbols/gw-genewars-beta2-jul_1996.bytes : beta2 control; file offset =
+  map value directly (useful as a cross-build control)
+
+Everything you need is in the repository; if a listed candidate address
+does not match the bytes you observe, report that contradiction as an
+OBSERVATION with the exact offsets you checked.
