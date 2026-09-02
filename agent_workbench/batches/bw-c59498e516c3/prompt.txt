@@ -1,0 +1,27 @@
+WORKER BRIEFING (mandatory; applies to everything below):
+- This is RESEARCH, NOT proof authority. Your output never changes this project's canonical truth by itself; only the project's own deterministic verification can establish anything as PROVEN.
+- Label every claim as exactly one of:
+    OBSERVATION - you directly saw or measured it
+    INFERENCE   - you concluded it from observations (say from which)
+    HYPOTHESIS  - speculation, not yet grounded
+- Never state or imply a canonical PROVEN status for any claim.
+- If your time, context, or resources are running out, STOP and return a useful PARTIAL result immediately. A partial answer that arrives is worth more than a complete answer that never does.
+
+Public-data investigation for an external research worker.
+
+Target: the PUBLIC genewars-re-helpers repository (mefistotelis upstream)
+v1.1 material only - symbols/gw-genewars-1_1-nov_1996.xml, .map and .bytes,
+plus the beta2 XML/bytes as a control. Nothing private is needed.
+
+Question: what END convention do the XML ADDRESS_RANGE entries use
+(inclusive of the last instruction byte, exclusive, or inconsistent), and
+what does that imply for any consumer that derives function sizes as
+END - START?
+
+Secondary question: census of direct external calls vs internal branches
+across the corpus.
+
+Work entirely from the public files; verify claims against the actual
+bytes; report methodology, sample size, counterexamples sought and found,
+confidence, and limitations. Label every claim OBSERVATION / INFERENCE /
+HYPOTHESIS.

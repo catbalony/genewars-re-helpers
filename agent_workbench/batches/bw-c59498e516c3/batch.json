@@ -1,0 +1,17 @@
+{
+  "batch_id": "bw-c59498e516c3",
+  "evidence_manifest": [],
+  "output_expectations": {
+    "format": "markdown",
+    "notes": "structured investigation report with methodology, sample size, results, counterexamples, verdict, confidence/limitations, and exact files/addresses used"
+  },
+  "public_path": "agent_workbench/batches/bw-c59498e516c3/",
+  "returns": [
+    "raw_legacy.md"
+  ],
+  "schema_version": 1,
+  "status": "COMPLETED",
+  "task_type": "public-data-research",
+  "title": "Public v1.1 Ghidra XML ADDRESS_RANGE END convention (legacy example)",
+  "worker_prompt": "WORKER BRIEFING (mandatory; applies to everything below):\n- This is RESEARCH, NOT proof authority. Your output never changes this project's canonical truth by itself; only the project's own deterministic verification can establish anything as PROVEN.\n- Label every claim as exactly one of:\n    OBSERVATION - you directly saw or measured it\n    INFERENCE   - you concluded it from observations (say from which)\n    HYPOTHESIS  - speculation, not yet grounded\n- Never state or imply a canonical PROVEN status for any claim.\n- If your time, context, or resources are running out, STOP and return a useful PARTIAL result immediately. A partial answer that arrives is worth more than a complete answer that never does.\n\nPublic-data investigation for an external research worker.\n\nTarget: the PUBLIC genewars-re-helpers repository (mefistotelis upstream)\nv1.1 material only - symbols/gw-genewars-1_1-nov_1996.xml, .map and .bytes,\nplus the beta2 XML/bytes as a control. Nothing private is needed.\n\nQuestion: what END convention do the XML ADDRESS_RANGE entries use\n(inclusive of the last instruction byte, exclusive, or inconsistent), and\nwhat does that imply for any consumer that derives function sizes as\nEND - START?\n\nSecondary question: census of direct external calls vs internal branches\nacross the corpus.\n\nWork entirely from the public files; verify claims against the actual\nbytes; report methodology, sample size, counterexamples sought and found,\nconfidence, and limitations. Label every claim OBSERVATION / INFERENCE /\nHYPOTHESIS.\n"
+}
